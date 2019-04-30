@@ -6,21 +6,26 @@
 		<title>SCSU Donates</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" type="text/css" href="../css/main.css" />
-		<script src="main.js"></script>
+		<script>
+		function myFunction() {
+			if(confirm("Are you sure you want to pay amount X"))
+				window.location.href='paymentConfirmation.html'
+		}
+		</script>
 	</head>
 	<body>
 		<div id="container">
-				<a href="index.html">
-					<img
-						class="home"
-						src="../home.png"
-						height="50px"
-						width="50px"
+			<a href="index.html">
+				<img
+					class="home"
+					src="../home.png"
+					height="50px"
+					width="50px"
 					/>
-				</a>
-				<a href="help.html">
-					<img class="question" src="../question.png" height="50px" width="50px" />
-				</a>
+			</a>
+			<a href="help.html">
+				<img class="question" src="../question.png" height="50px" width="50px" />
+			</a>
 			<a href="index.html" class="nolink">
 				<div id="banner">
 					<h1>
@@ -35,14 +40,14 @@
 					value=""
 					class="textbox"
 					style="width: 200px;"
-				/>
+					/>
 				<h3>Name on Card:</h3>
 				<input
 					type="text"
 					value=""
 					class="textbox"
 					style="width: 200px;"
-				/>
+					/>
 				<h3>Expiration Date:</h3>
 				<select class="expire">
 					<option value="">Month</option>
@@ -73,36 +78,37 @@
 					value=""
 					class="textbox"
 					style="width: 200px;"
-				/>
+					/>
 				<h3>City:</h3>
 				<input
 					type="text"
 					value=""
 					class="textbox"
 					style="width: 150px;"
-				/>
+					/>
 				<h3>State:</h3>
 				<input
 					type="text"
 					value=""
 					class="textbox"
 					style="width: 150px;"
-				/>
+					/>
 				<h3>Zip Code:</h3>
 				<input
 					type="text"
 					value=""
 					class="textbox"
 					style="width: 150px;"
-				/>
+					/>
 				<h3>Amount:</h3>
 				<input
 					type="text"
 					value=""
 					class="textbox"
 					style="width: 150px;"
-				/><br>
-				<input type="button" class="button1" style="width: 150px; margin-left: 30%;margin-right: 30%;" value="Confirm" onclick="window.location.href='paymentConfirmation.html'">
+					/><br>
+				<input type="button" class="button1" style="width: 150px; margin-left:
+					30%;margin-right: 30%;" value="Confirm" onclick="myFunction()">
 				<br><br><br><br></div>
 		</div>
 	</body>
